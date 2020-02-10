@@ -6,12 +6,12 @@ from functools import partial
 from random import random
 import os
 
-from tensorflow.keras.layers import *
-from tensorflow.keras.models import *
-from tensorflow.keras.optimizers import *
-from tensorflow.keras.initializers import *
+from tf.compat.v1.keras.layers import *
+from tf.compat.v1.keras.models import *
+from tf.compat.v1.keras.optimizers import *
+from tf.compat.v1.keras.initializers import *
 import tensorflow as tf
-import tensorflow.keras.backend as K
+import tf.compat.v1.keras.backend as K
 
 from datagen import dataGenerator, printProgressBar
 from conv_mod import *

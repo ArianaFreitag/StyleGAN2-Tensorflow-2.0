@@ -5,12 +5,12 @@ import time
 from functools import partial
 from random import random
 import os
+import tensorflow as tf
 
 from tf.compat.v1.keras.layers import *
 from tf.compat.v1.keras.models import *
 from tf.compat.v1.keras.optimizers import *
 from tf.compat.v1.keras.initializers import *
-import tensorflow as tf
 import tf.compat.v1.keras.backend as K
 
 from datagen import dataGenerator, printProgressBar
@@ -19,7 +19,7 @@ from conv_mod import *
 im_size = 256
 latent_size = 512
 BATCH_SIZE = 16
-directory = "Earth"
+directory = "textures2"
 
 cha = 24
 
